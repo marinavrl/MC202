@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 struct data {
     int dia;
@@ -27,6 +28,7 @@ int main() {
 
     printf("Digite o telefone do aluno:\n");
     scanf("%d", &aluno.telefone);
+    while ((getchar()) != '\n');
 
     printf("Digite o nome:\n");
     fgets(aluno.nome, 50, stdin);
